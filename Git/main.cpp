@@ -17,5 +17,7 @@ HANDLE hConsole;
 
 int main()
 {
+	const int size = 10;
+	int arr[size]{ 1,21,33,4,15,62,7,81,-9,10 };
 	return 0;
 }
