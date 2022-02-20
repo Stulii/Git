@@ -27,7 +27,21 @@ int main()
 		print("или по убыванию, в зависимости от третего параметра функции, Если он равен 1, сортировка идет по убыванию,");
 		print("если 0, то по возрастнию.Первые 2 параметра функции - это массив и его размер, третий параметр по умолчанию равен 1.");
 		cout << endl;
+		printGreen("Исходный массив: ");
+		printarr(arr, size);
+		cout << endl;
+		cout << endl;
+		printGreen("Если третий параметры = 0:");
+		cout << endl;
 		sortarr(arr, size, 0);
 		printarr(arr, size);
+		cout << endl;
+		cout << endl;
+		printGreen("Если третий параметры = 1:");
+		cout << endl;
+		sortarr(arr, size, 1);
+		printarr(arr, size);
+		cout << endl;
+		cout << endl;
 	return 0;
 }

@@ -5,7 +5,18 @@ void sortarr(int arr[], int size, int swch)
 {
 	if (swch == 1)
 	{
-
+        for (int j = 0; j < size - 1; j++)
+        {
+            for (int k = j + 1; k < size; k++)
+            {
+                if (arr[j] < arr[k])
+                {
+                    int temp = arr[k];
+                    arr[k] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
 	}
 	if (swch == 0)
 	{

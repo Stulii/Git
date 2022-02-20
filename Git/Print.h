@@ -24,3 +24,13 @@ void printarr(int arr[], uint32_t size)
 
     }
 }
+
+void printGreen(string x)
+{
+    hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hConsole, 10);
+    cout << x << endl;
+    hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hConsole, 7);
+
+}
