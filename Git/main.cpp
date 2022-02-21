@@ -27,6 +27,15 @@ int main()
 	printYellow("- отсортировать элементы массива, наход€щиес€ слева от найденной позиции по убыванию, а элементы");
 	printYellow("массива, наход€щиес€ справа от найденной позиции по возрастанию.");
 	printendl();
-		
+	const int size3 = 20;
+	int arr3[size3];
+	printGreen("ћассив: ");
+	randarr(arr3, size3);
+	printarr(arr3, size3);
+	printendl();
+	printGreen("ѕеремешанный массив: ");
+	shake(arr3, size3);
+	printarr(arr3, size3);
+	printendl();
 	return 0;
 }
