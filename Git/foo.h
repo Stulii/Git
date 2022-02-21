@@ -19,3 +19,25 @@ void shake(int arr[], uint32_t size)
         swap(arr[i], arr[rand() % size]);
     }
 }
+int findDig(int arr[], uint32_t size, int dig)
+{
+    
+    int digpos;
+    
+    for (int i = 0; i < size; i++)
+    {
+
+
+        if (arr[i] == dig)
+        {
+            digpos = i;
+            break;
+        }
+
+    }
+    return digpos + 1;
+}
+void sortLeftAndRight(int arr[], uint32_t size, int dig)
+{
+
+}

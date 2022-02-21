@@ -18,6 +18,7 @@ using namespace std;
 
 int main()
 {
+
 	setlocale(LC_ALL, "Rus");
 	
 	printYellow("Дан массив из 20 целых чисел со значениями от 1 до 20.");
@@ -33,9 +34,22 @@ int main()
 	randarr(arr3, size3);
 	printarr(arr3, size3);
 	printendl();
+	printendl();
 	printGreen("Перемешанный массив: ");
 	shake(arr3, size3);
 	printarr(arr3, size3);
 	printendl();
+	printendl();
+	int dig = 1 + rand() % 20;
+	printGreen("Случайное число: ");
+	printRed(dig);
+	printGreen("Позиция случайного числа: ");
+	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(hConsole, 12);
+	cout << findDig(arr3, size3,  dig);
+	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(hConsole, 7);
+	
+
 	return 0;
 }
