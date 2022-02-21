@@ -20,16 +20,19 @@ int main()
 	printYellow("и самого правого отрицательного элемента) и отсортировать");
 	printYellow("элементы, находящиеся между ними.");
 	printendl();
-	printGreen("Массив:");
 	printendl();
+	printGreen("Массив:");
 	const int size2 = 10;
 	int arr2[size2];
 	randarr(arr2, size2);
 	printarr(arr2, size2);
 	printendl();
-	printGreen("Массив с отсортированными элементами:");
+	printendl();
+    printGreen("Массив с отсортированными элементами:");
 	findFirstAndLast(arr2, size2);
 	printarr(arr2, size2);
+	printendl();
+	printendl();
 	printendl();
 	return 0;
 }
