@@ -108,5 +108,5 @@ void printYellow(string x)
     cout << x << endl;
     hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(hConsole, 7);
-
+    
 }

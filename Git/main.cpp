@@ -12,6 +12,7 @@ using namespace std;
 
 int main()
 {
+	srand(time(0));
 	setlocale(LC_ALL, "Rus");
     printYellow("Дан массив случайных чисел в диапазонеот - 20 до + 20.");
 	printYellow("Необходимо найти позиции крайних отрицательных");
@@ -19,7 +20,12 @@ int main()
 	printYellow("и самого правого отрицательного элемента) и отсортировать");
 	printYellow("элементы, находящиеся между ними.");
 	printendl();
-	printYellow("Массив:");
+	printGreen("Массив:");
+	printendl();
+	const int size2 = 10;
+	int arr2[size2];
+	randarr(arr2, size2);
+	printarr(arr2, size2);
 	printendl();
 	return 0;
 }
