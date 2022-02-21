@@ -40,14 +40,16 @@ int main()
 	printarr(arr3, size3);
 	printendl();
 	printendl();
-	int dig = 1 + rand() % 20;
+	int dig = arr3[rand() % 19];
 	printGreen("Случайное число: ");
 	printRed(dig);
 	printGreen("Позиция случайного числа: ");
 	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleTextAttribute(hConsole, 12);
 	int numbIndex = findDig(arr3, size3, dig);
-	cout << numbIndex + 1 <<" (Индекс: " << numbIndex<< ")" << endl;
+	cout << numbIndex + 1 << " (Индекс: " << numbIndex << ")" << endl;
+	
+	
 	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleTextAttribute(hConsole, 7);
 	
