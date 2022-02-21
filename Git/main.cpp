@@ -27,5 +27,9 @@ int main()
 	randarr(arr2, size2);
 	printarr(arr2, size2);
 	printendl();
+	printGreen("Массив с отсортированными элементами:");
+	findFirstAndLast(arr2, size2);
+	printarr(arr2, size2);
+	printendl();
 	return 0;
 }
