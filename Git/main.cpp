@@ -46,9 +46,11 @@ int main()
 	printGreen("Позиция случайного числа: ");
 	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleTextAttribute(hConsole, 12);
-	cout << findDig(arr3, size3,  dig);
+	int numbIndex = findDig(arr3, size3, dig);
+	cout << numbIndex + 1 <<" (Индекс: " << numbIndex<< ")" << endl;
 	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleTextAttribute(hConsole, 7);
+	
 	
 
 	return 0;
