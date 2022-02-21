@@ -6,6 +6,8 @@
 #include <cstdlib>
 #include <string>
 #include <iomanip>
+#include "print.h"
+#include "foo.h"
 using namespace std;
 HANDLE hConsole;
 
