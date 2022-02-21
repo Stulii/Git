@@ -1,11 +1,7 @@
 #define _USE_MATH_DEFINES
-#include <iostream>
-#include <math.h> 
 #include <windows.h>
-#include <conio.h>
-#include <cstdlib>
-#include <string>
-#include <iomanip>
+#include "foo.h"
+#include "print.h"
 using namespace std;
 HANDLE hConsole;
 
