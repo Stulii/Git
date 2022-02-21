@@ -48,11 +48,15 @@ int main()
 	SetConsoleTextAttribute(hConsole, 12);
 	int numbIndex = findDig(arr3, size3, dig);
 	cout << numbIndex + 1 << " (Индекс: " << numbIndex << ")" << endl;
-	
-	
 	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleTextAttribute(hConsole, 7);
-	
+	printendl();
+	printendl();
+	printGreen("Cлева от найденной позиции по убыванию, а находящиеся справа  по возрастанию:");
+	sortLeftAndRight(arr3, size3, numbIndex);
+	printarr(arr3, size3);
+	printendl();
+	printendl();
 	
 
 	return 0;
